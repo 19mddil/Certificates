@@ -1,0 +1,13 @@
+
+// Add an event listener
+<script> 
+document.addEventListener("linkClick", function(e) { 
+		window.open("https://coursera.org/share/245425cf4adc6f38d61f0cf0048b7923"); 
+	});
+
+// Create the event
+var event = new CustomEvent("linkClick", { "detail": "Example of an event" });
+
+// Dispatch/Trigger/Fire the event
+document.dispatchEvent(event);
+</script>
